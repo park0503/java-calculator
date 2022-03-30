@@ -79,7 +79,7 @@ class CalculationTest {
         String question = "1+4";
         Optional<Integer> result = calculation.calculate((question));
 
-        result.ifPresent(integer -> assertTrue(true, question + "가 " + integer + "으로 계산이 됐습니다. 검증 부분을 확인해주세요."));
+        result.ifPresent(integer -> assertTrue(true, question + "가 " + result + "으로 계산이 됐습니다. 검증 부분을 확인해주세요."));
 
     }
 
@@ -88,6 +88,6 @@ class CalculationTest {
         String question = "안녕하세요.";
         Optional<Integer> result = calculation.calculate((question));
 
-        result.ifPresent(integer -> assertTrue(true, question + "가 " + integer + "으로 계산이 됐습니다. 검증 부분을 확인해주세요."));
+        result.ifPresent(integer -> assertTrue(true, question + "가 " + result + "으로 계산이 됐습니다. 검증 부분을 확인해주세요."));
     }
 }
